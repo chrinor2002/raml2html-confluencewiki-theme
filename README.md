@@ -13,4 +13,4 @@ raml2html --theme raml2html-confluencewiki-theme example.raml > example.wiki
 ```
 
 ## License
-raml2html-confluence-template is available under the MIT license. See the LICENSE file for more info.
+raml2html-confluencewiki-theme is available under the MIT license. See the LICENSE file for more info.
