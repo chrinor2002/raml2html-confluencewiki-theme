@@ -1,0 +1,44 @@
+{
+  "name": "raml2html-confluencewiki-theme",
+  "description": "A raml2html theme for rendering RAML to confluence wiki format.",
+  "version": "0.0.1",
+  "author": {
+    "name": "Chris Reid",
+    "email": "chrinor2002@gmail.com"
+  },
+  "homepage": "https://github.com/chrinor2002/raml2html-confluencewiki-theme",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/chrinor2002/raml2html-confluencewiki-theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chrinor2002/raml2html-confluencewiki-theme/issues"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "nunjucks": "2.5.x"
+  },
+  "keywords": [
+    "RAML",
+    "raml2html-theme"
+  ],
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "index.nunjucks",
+    "item.nunjucks",
+    "resource.nunjucks"
+  ],
+  "maintainers": [
+    {
+      "name": "Chris Reid",
+      "email": "chrinor2002@gmail.com"
+    }
+  ],
+  "directories": {},
+  "scripts": {},
+  "preferGlobal": true
+}

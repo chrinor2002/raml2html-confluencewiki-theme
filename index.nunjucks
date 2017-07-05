@@ -1,0 +1,21 @@
+h1. {{ title }} API documentation{% if version %} version {{ version }}{% endif %}
+{{ baseUri }}
+
+{% if description -%}
+{{ description }}
+{%- endif %}
+
+{% for item in documentation %}
+h3. {{ item.title }}
+{{ item.content }}
+{% endfor %}
+
+----
+
+{% for resource in resources %}
+h2. {% if resource.displayName %}{{ resource.displayName }}{% else %}{{ resource.relativeUri }}{% endif %}
+{{ resource.description }}
+
+{% include "./resource.nunjucks" %}
+
+{% endfor %}
