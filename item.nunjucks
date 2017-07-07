@@ -17,10 +17,10 @@
     {{ item.type }}
   {%- endif -%}
 {%- endif %} | {% if item.default or item.default == 0 or item.default == false -%}
-default: {{ item.default }}
+default: {{ item.default }}<br>
 {%- endif -%}
 {%- if item.repeat -%}
-repeat: {{ item.repeat }}
+repeat: {{ item.repeat }}<br>
 {%- endif -%}
 {%- if item.type == 'string' -%}
   {%- if item.minLength or item.minLength == 0 -%}
@@ -40,4 +40,4 @@ repeat: {{ item.repeat }}
 {%- if item.pattern -%}
   pattern: {{ item.pattern }}
 {% endif -%}
-{{ item.description }}
+{{ item.description | replace("\n", "<br>") }}

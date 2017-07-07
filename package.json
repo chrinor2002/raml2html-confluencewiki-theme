@@ -1,7 +1,7 @@
 {
   "name": "raml2html-confluencewiki-theme",
   "description": "A raml2html theme for rendering RAML to confluence wiki format.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "Chris Reid",
     "email": "chrinor2002@gmail.com"
