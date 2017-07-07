@@ -4,7 +4,7 @@
 {{ item.key }}
 {%- if isPathParam -%}
 {% raw %}}{% endraw %}
-{%- endif -%}* | {% if item.required -%}Y{%- endif %} | {% if item.enum -%}
+{%- endif -%}* | {% if item.required -%}Y{%- else -%}N{%- endif %} | {% if item.enum -%}
   {%- if item.enum.length === 1 -%}
     {{ item.enum.join(', ') }}
   {%- else -%}
